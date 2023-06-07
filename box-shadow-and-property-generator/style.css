@@ -75,9 +75,10 @@ h3 a {
 
 }
 .label_span span {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 3px 15px;
     border-radius: 5px;
+    border: 0.5px solid rgb(217, 217, 217);
 
 }
 .left_property input {
