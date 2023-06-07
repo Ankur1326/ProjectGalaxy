@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow - Generator</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h3>
+            A Project by 
+            <span>Ankur</span>
+            <a target="_blank" href="https://www.linkedin.com/in/ankur-swami">+Follow</a>
+        </h3>
+        <a target="_blank" href="https://github.com/Ankur1326"><i class="fa-brands fa-github"></i></a>
+    </header>
+    <div class="main_container">
+        <section class="left">
+            <h1>Box Shadows</h1>
+            <div class="input_filds">
+                <div class="left_property">
+                    <div class="label_span">
+                        <label for="h-offset">Horizontal offset </label>
+                        <span class="h_offset_span">0px</span>
+                    </div>
+                    <input type="range" name="h-offset" id="h-offset" min="-100" max="100" value="0">
+                </div>
+                <div class="left_property">
+                    <div class="label_span">
+                        <label for="v-offset">Vertical offset </label>
+                        <span class="v_offset_span">0px</span>
+                    </div>
+                    <input type="range" name="v-offset" id="v-offset" min="-100" max="100" value="0">
+                </div>
+                <div class="left_property">
+                    <div class="label_span">
+                        <label for="blur">Blur radius</label>
+                        <span class="blur_span">0px</span>
+                    </div>
+                    <input type="range" name="blur" id="blur" min="0" max="200" value="0">
+                </div>
+                <div class="left_property">
+                    <div class="label_span">
+                        <label for="spread">Spread radius</label>
+                        <span class="spread_span">0px</span>
+                    </div>
+                    <input type="range" name="spread" id="spread" min="-100" max="100" value="0">
+                </div>
+                <div class="left_property">
+                    <div class="label_span">
+                        <label for="color">Color</label>
+                        <span class="color_span">#000000</span>
+                    </div>
+                    <input type="color" name="color" id="color">
+                </div>
+            </div>
+
+        </section>
+        <section class="result_box">
+            <div class="box"></div>
+            <div class="code_box">
+                <p>box-shadow: <span class="box_shadow">0px 0px 0px 0px #000000</span></p>
+                <p>border-radius: <span class="border_radius_display">0px</span></p>
+                <p>height: <span class="height_display">200px</span></p>
+                <p>width: <span class="width_display">200px</span></p>
+            </div>
+        </section>
+        <section class="right">
+            <h1>Box Property</h1>
+            <div class="input_filds">
+                <div class="right_property">
+                    <label for="canvas_color">Canvas color</label><br>
+                    <input type="color" name="color" id="canvas_color" value="#d6d6d6">
+                </div>
+                <div class="right_property">
+                    <label for="background_color">Background color</label><br>
+                    <input type="color" name="color" id="background_color" value="#ffffff">
+                </div>
+                <div class="right_property">
+                    <div class="label_span">
+                        <label for="border_radius">Border radius</label>
+                        <span class="border_radius">0px</span>
+                    </div>
+                    <input type="range" name="" id="border_radius" value="0" >
+                </div>
+                <div class="right_property">
+                    <div class="label_span">
+                        <label for="height">Height</label>
+                        <span class="height">200px</span>
+                    </div>
+                    <input type="range" name="" id="height" min="10" max="300" value="200">
+                </div>
+                <div class="right_property">
+                    <div class="label_span">
+                        <label for="width">Width</label>
+                        <span class="width">200px</span>
+                    </div>
+                    <input type="range" name="" id="width" min="10" max="300" value="200">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
