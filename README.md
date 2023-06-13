@@ -13,3 +13,5 @@ For practice of JavaScript
     Live link - https://genuine-biscotti-e9bcf9.netlify.app/
 <h3>5. Quiz App</h3>
     Live link - https://gilded-blini-5613bc.netlify.app/
+<h3>6. BMI Calculator</h3>
+    Live link - https://adorable-bonbon-2facd1.netlify.app/
