@@ -1,0 +1,99 @@
+/* import google font - Josefin Sans */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+html {
+    font-size: 62.5%;
+}
+.main-div {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(206, 92%, 94%);
+}
+.inner-div {
+    width: 500px;
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+.inner-div h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 1rem 0 4rem 0;
+}
+.inner-div li {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    list-style: none;
+}
+input {
+    cursor: pointer;   
+}
+#submit, .btn {
+    padding: 1rem 3rem;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #74b9ff;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 4rem;
+    border-radius: .5rem;
+}
+#submit:hover, .btn:hover {
+    background-color: #0984e3;
+}
+
+#showScore {
+    background-color: #dfe6e9;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+.scoreArea {
+    display: none;
+}
+#showScore h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+#showScore button {
+    background-color: #55efc4;
+    color: #2d3436;
+    margin-top: 1rem;
+}
+#showScore button:hover {
+    background-color: #38c29b;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 500px) {
+    .inner-div {
+        width: 400px;
+        background-color: #fff;
+        padding: 2rem 4rem;
+    }
+    .inner-div h2 {
+        font-size: 3rem;
+        font-weight: 400;
+        margin: 1rem 0 4rem 0;
+    }
+    .inner-div li {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        list-style: none;
+    }
+  }

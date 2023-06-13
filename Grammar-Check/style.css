@@ -1,0 +1,103 @@
+/* import google font library - Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+html {
+    color: rgb(96, 101, 123);
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    padding: 30px;
+    margin-top: 30px;
+    max-width: 750px;
+}
+h2 {
+    color: rgb(43, 45, 56);
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: -0.5px;
+}
+h2 + p {
+    max-width: 670px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+textarea {
+    width: 100%;
+    height: 316px;
+    padding: 18px;
+    position: relative;
+    resize: none;
+    box-shadow: 0 12px 48px 0px rgb(109 117 141 / 20%);
+    border: 0.5px solid rgb(231, 233, 245);
+    border-radius: 16px;
+    background-color: #fff;
+}
+textarea:focus {
+    border: 0.3px solid rgb(147, 148, 154);
+    outline: none;
+}
+
+.counter_container p, textarea {
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.6;
+}
+button {
+    background-color: rgb(17, 166, 131);
+    color: #fff;
+    border-radius: 6px;
+    padding: 16px 32px;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    margin-top: -80px;
+}
+
+button:hover, button:focus {
+    background-color: rgb(42, 201, 164);
+    box-shadow: 0 5px 30px 0 rgb(168, 255, 236);
+}
+.counter_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+@media screen and (max-width: 740px) {
+    h2 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 465px) {
+    h2 {
+        font-size: 28px;
+        width: 100%;
+    }
+    h2 + p {
+        max-width: 370px;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 60px;
+        margin: 20px auto;
+    }
+    .counter_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
